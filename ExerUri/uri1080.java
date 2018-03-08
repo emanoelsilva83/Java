@@ -8,7 +8,11 @@ public class uri1080{
       arrays[i] = input.nextInt();
       if (arrays[i] > maior){
         maior = arrays[i];
+<<<<<<< HEAD
         posi = (i+1);
+=======
+        posi = i;
+>>>>>>> master
       }
     }
     System.out.println(maior);
