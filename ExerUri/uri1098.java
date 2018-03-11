@@ -1,13 +1,23 @@
 public class uri1098{
   public static void main(String[]args){
-    double i = 0;double j = 1;double k = 0;
+    double i = 0;double j;int k;
     while(i <= 2){
-      while(j < 4){
-        System.out.printf("I=%.1f J=%.1f\n",i,j);
-        j+=1.2;
-        k = j;
+      j = 1;
+      k = 0;
+      j += i;
+      while(k < 3){
+        if (j % 2 == 0){
+          System.out.printf("I=%.0f J=%.0f\n",i,j);
+        }else if (i % 2 == 0){
+          System.out.printf("I=%.0f J=%.0f\n",i,j);
+        }else if ((i == Math.floor(i)) || (j == Math.floor(j))){
+          System.out.printf("I=%.0f J=%.0f\n",i,j);
+        }else{
+          System.out.printf("I=%.1f J=%.1f\n",i,j);
+        }
+        j += 1;
+        k += 1;
       }
-      j = k;
       i+=0.2;
     }
   }
